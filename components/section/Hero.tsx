@@ -1,10 +1,12 @@
+/* eslint-disable @next/next/no-img-element */
+/* eslint-disable react/no-unescaped-entities */
 import React from 'react'
 
 type Props = {}
 
 const Hero = (props: Props) => {
   return (
-    <div className="h-screen w-full relative flex flex-col-reverse py-16 lg:pt-0 lg:flex-col lg:pb-0 bg-cover bg-[url('https://images.unsplash.com/photo-1639353014154-8b9da8815d84?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80')] lg:bg-black lg:bg-none">
+    <div className="h-screen w-full relative flex flex-col-reverse py-16 lg:pt-0 lg:flex-col lg:pb-0 bg-fixed bg-cover bg-[url('https://images.unsplash.com/photo-1639353014154-8b9da8815d84?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80')] lg:bg-black lg:bg-none">
       <div className="inset-y-0 top-0 right-0 z-0 w-full max-w-xl px-4 mx-auto md:px-0 lg:pr-0 lg:mb-0 lg:mx-0 lg:w-7/12 lg:max-w-full lg:absolute xl:px-0">
         <svg
           className="absolute left-0 hidden h-full text-black transform -translate-x-1/2 lg:block"

@@ -1,123 +1,106 @@
+/* eslint-disable @next/next/no-img-element */
+/* eslint-disable react/no-unescaped-entities */
 import React from 'react'
 
 type Props = {}
 
 const About = (props: Props) => {
   return (
-    <div className="container my-24 px-6 mx-auto">
-      <section className="mb-32 text-gray-800">
-        <h2 className="text-3xl font-bold mb-12 text-center">Why is it so great?</h2>
-        <div className="flex flex-wrap items-center">
-          <div className="grow-0 shrink-0 basis-auto w-full lg:w-5/12 mb-12 lg:mb-0 md:px-6">
-            <div className="relative overflow-hidden bg-no-repeat bg-cover bg-[50%] rounded-lg shadow-lg" data-mdb-ripple="true"
-              data-mdb-ripple-color="light">
-              <img src="https://mdbootstrap.com/img/new/textures/full/98.jpg" className="w-full" />
-              <a href="#!">
-                <div className="absolute top-0 right-0 bottom-0 left-0 w-full h-full overflow-hidden bg-fixed bg-[rgba(0, 0, 0, 0.4)">
-                  <div className="flex justify-center items-center h-full">
-                    <div className="px-6 py-12 md:px-12 text-white text-center">
-                      <h3 className="text-2xl uppercase font-bold mb-6">
-                        The future is <u className="color: hsl(210, 12%, 80%)">now</u>
-                      </h3>
-                      <p className="color: hsl(210, 12%, 80%)">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum quia
-                        laboriosam error consequuntur fugit, doloribus rerum, iure nesciunt amet
-                        quidem veniam cupiditate hic fugiat dolore aperiam quisquam libero earum
-                        quibusdam?
-                      </p>
-                    </div>
-                  </div>
-                </div>
-                <div className="relative overflow-hidden bg-no-repeat bg-cover">
-                  <div
-                    className="absolute top-0 right-0 bottom-0 left-0 w-full h-full overflow-hidden bg-fixed opacity-0 hover:opacity-100 transition duration-300 ease-in-out bg-[rgba(251, 251, 251, 0.2)]"></div>
-                </div>
-              </a>
-            </div>
-          </div>
-    
-          <div className="grow-0 shrink-0 basis-auto w-full lg:w-7/12 md:px-6">
-            <div className="flex mb-12">
+    <>
+    <div className="w-full relative flex flex-col-reverse py-16 lg:pt-0 lg:grid-rows-2 lg:pb-0 bg-fixed bg-cover bg-[url('https://images.pexels.com/photos/604684/pexels-photo-604684.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1')] lg:bg-black lg:bg-none">
+      <div className="inset-y-0 top-0 left-0 z-0 w-full max-w-xl px-4 mx-auto md:px-0 lg:pr-0 lg:mb-0 lg:mx-0 lg:w-7/12 lg:max-w-full lg:absolute xl:px-0">
+        {/* <svg
+          className="absolute left-6 hidden h-full text-black transform -translate-x-1/2 lg:block"
+          viewBox="0 0 100 100"
+          fill="currentColor"
+          preserveAspectRatio="none slice"
+        >
+          <path d="M50 0H100L50 100H0L50 0Z" />
+        </svg> */}
+        <img
+          className="hidden lg:flex object-cover  h-56 rounded shadow-lg lg:rounded-none lg:shadow-none md:h-96 lg:h-full"
+          src="https://images.pexels.com/photos/604684/pexels-photo-604684.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+          alt=""
+        />
+      </div>
+
+      <div className="relative flex flex-col items-start w-full max-w-xl px-4 md:px-0 lg:px-8 lg:left-1/2">
+        <div className="mb-16 lg:my-20 lg:max-w-lg lg:pr-5 text-white float-right">
+        <h2 className="text-6xl font-bold text-center lg:mb-20">Who are we?</h2>
+          <div className="grow-0 shrink-0 basis-auto w-full px-4 sm:px-6">
+            <div className="flex my-12">
               <div className="shrink-0">
-                <div className="p-4 rounded-md shadow-lg bg-[hsl(204, 30%, 20%)]">
-                  <svg className="w-5 h-5 text-white" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                    <path fill="currentColor"
-                      d="M192 208c0-17.67-14.33-32-32-32h-16c-35.35 0-64 28.65-64 64v48c0 35.35 28.65 64 64 64h16c17.67 0 32-14.33 32-32V208zm176 144c35.35 0 64-28.65 64-64v-48c0-35.35-28.65-64-64-64h-16c-17.67 0-32 14.33-32 32v112c0 17.67 14.33 32 32 32h16zM256 0C113.18 0 4.58 118.83 0 256v16c0 8.84 7.16 16 16 16h16c8.84 0 16-7.16 16-16v-16c0-114.69 93.31-208 208-208s208 93.31 208 208h-.12c.08 2.43.12 165.72.12 165.72 0 23.35-18.93 42.28-42.28 42.28H320c0-26.51-21.49-48-48-48h-32c-26.51 0-48 21.49-48 48s21.49 48 48 48h181.72c49.86 0 90.28-40.42 90.28-90.28V256C507.42 118.83 398.82 0 256 0z">
-                    </path>
+                <div className="p-4 rounded-md shadow-lg bg-gray-500">
+                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6">
+                    <path strokeLinecap="round" strokeLinejoin="round" d="M3 3l1.664 1.664M21 21l-1.5-1.5m-5.485-1.242L12 17.25 4.5 21V8.742m.164-4.078a2.15 2.15 0 011.743-1.342 48.507 48.507 0 0111.186 0c1.1.128 1.907 1.077 1.907 2.185V19.5M4.664 4.664L19.5 19.5" />
                   </svg>
                 </div>
               </div>
               <div className="grow ml-4">
-                <p className="font-bold mb-1">Support 24/7</p>
-                <p className="text-gray-500">
-                  Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nihil quisquam quibusdam
-                  modi sapiente magni molestias pariatur facilis reprehenderit facere aliquam ex.
-                </p>
+                <div className="font-bold text-2xl mb-1">Remove the labels</div>
+                <div className="text-gray-400 text-lg">
+                  <div>The era of restrictions by place of residence, nationality, or race is over.</div>
+                  <div>Each person's worth outweighs the labels attached to them.</div>
+                  <div>We remove all unnecessary tags and move on to the bigger world.</div>
+                </div>
               </div>
             </div>
     
-            <div className="flex mb-12">
+            <div className="flex my-12">
               <div className="shrink-0">
-                <div className="p-4 rounded-md shadow-lg bg-[hsl(204, 30%, 20%)]">
-                  <svg className="w-5 h-5 text-white" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                    <path fill="currentColor"
-                      d="M466.5 83.7l-192-80a48.15 48.15 0 0 0-36.9 0l-192 80C27.7 91.1 16 108.6 16 128c0 198.5 114.5 335.7 221.5 380.3 11.8 4.9 25.1 4.9 36.9 0C360.1 472.6 496 349.3 496 128c0-19.4-11.7-36.9-29.5-44.3zM256.1 446.3l-.1-381 175.9 73.3c-3.3 151.4-82.1 261.1-175.8 307.7z">
-                    </path>
+                <div className="p-4 rounded-md shadow-lg bg-gray-500">
+                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6">
+                    <path strokeLinecap="round" strokeLinejoin="round" d="M16.023 9.348h4.992v-.001M2.985 19.644v-4.992m0 0h4.992m-4.993 0l3.181 3.183a8.25 8.25 0 0013.803-3.7M4.031 9.865a8.25 8.25 0 0113.803-3.7l3.181 3.182m0-4.991v4.99" />
                   </svg>
                 </div>
               </div>
               <div className="grow ml-4">
-                <p className="font-bold mb-1">Safe and solid</p>
-                <p className="text-gray-500">
-                  Eum nostrum fugit numquam, voluptates veniam neque quibusdam ullam aspernatur odio
-                  soluta, quisquam dolore animi mollitia a omnis praesentium, expedita nobis!
-                </p>
+                <div className="font-bold text-2xl mb-1">Form and disband internal teams organically</div>
+                <div className="text-gray-400 text-lg">
+                  <div>We work like living organisms.</div>
+                  <div>Depending on the project, team members are recruited from within the team and disbanded upon completion of the project.</div>
+                </div>
               </div>
             </div>
     
-            <div className="flex mb-12">
+            <div className="flex my-12">
               <div className="shrink-0">
-                <div className="p-4 rounded-md shadow-lg bg-[hsl(204, 30%, 20%)]">
-                  <svg className="w-5 h-5 text-white" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512">
-                    <path fill="currentColor"
-                      d="M624 352h-16V243.9c0-12.7-5.1-24.9-14.1-33.9L494 110.1c-9-9-21.2-14.1-33.9-14.1H416V48c0-26.5-21.5-48-48-48H112C85.5 0 64 21.5 64 48v48H8c-4.4 0-8 3.6-8 8v16c0 4.4 3.6 8 8 8h272c4.4 0 8 3.6 8 8v16c0 4.4-3.6 8-8 8H40c-4.4 0-8 3.6-8 8v16c0 4.4 3.6 8 8 8h208c4.4 0 8 3.6 8 8v16c0 4.4-3.6 8-8 8H8c-4.4 0-8 3.6-8 8v16c0 4.4 3.6 8 8 8h208c4.4 0 8 3.6 8 8v16c0 4.4-3.6 8-8 8H64v128c0 53 43 96 96 96s96-43 96-96h128c0 53 43 96 96 96s96-43 96-96h48c8.8 0 16-7.2 16-16v-32c0-8.8-7.2-16-16-16zM160 464c-26.5 0-48-21.5-48-48s21.5-48 48-48 48 21.5 48 48-21.5 48-48 48zm320 0c-26.5 0-48-21.5-48-48s21.5-48 48-48 48 21.5 48 48-21.5 48-48 48zm80-208H416V144h44.1l99.9 99.9V256z">
-                    </path>
+                <div className="p-4 rounded-md shadow-lg bg-gray-500">
+                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6">
+                    <path strokeLinecap="round" strokeLinejoin="round" d="M12 6v6h4.5m4.5 0a9 9 0 11-18 0 9 9 0 0118 0z" />
                   </svg>
                 </div>
               </div>
               <div className="grow ml-4">
-                <p className="font-bold mb-1">Extremely fast</p>
-                <p className="text-gray-500">
-                  Enim cupiditate, minus nulla dolor cumque iure eveniet facere ullam beatae hic
-                  voluptatibus dolores exercitationem? Facilis debitis aspernatur amet nisi iure
-                  eveniet facere?
-                </p>
+                <div className="font-bold text-2xl mb-1">Be faithful every moment</div>
+                <div className="text-gray-400 text-lg">
+                  <div>The present moment is more important than grand dreams.</div>
+                  <div>We reach our ultimate goal through steadily accumulating days.</div>
+                </div>
               </div>
             </div>
     
             <div className="flex">
               <div className="shrink-0">
-                <div className="p-4 rounded-md shadow-lg bg-[hsl(204, 30%, 20%)]">
-                  <svg className="w-5 h-5 text-white" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 544 512">
-                    <path fill="currentColor"
-                      d="M527.79 288H290.5l158.03 158.03c6.04 6.04 15.98 6.53 22.19.68 38.7-36.46 65.32-85.61 73.13-140.86 1.34-9.46-6.51-17.85-16.06-17.85zm-15.83-64.8C503.72 103.74 408.26 8.28 288.8.04 279.68-.59 272 7.1 272 16.24V240h223.77c9.14 0 16.82-7.68 16.19-16.8zM224 288V50.71c0-9.55-8.39-17.4-17.84-16.06C86.99 51.49-4.1 155.6.14 280.37 4.5 408.51 114.83 513.59 243.03 511.98c50.4-.63 96.97-16.87 135.26-44.03 7.9-5.6 8.42-17.23 1.57-24.08L224 288z">
-                    </path>
+                <div className="p-4 rounded-md shadow-lg bg-gray-500">
+                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6">
+                    <path strokeLinecap="round" strokeLinejoin="round" d="M2.25 18L9 11.25l4.306 4.307a11.95 11.95 0 015.814-5.519l2.74-1.22m0 0l-5.94-2.28m5.94 2.28l-2.28 5.941" />
                   </svg>
                 </div>
               </div>
               <div className="grow ml-4">
-                <p className="font-bold mb-1">Live analytics</p>
-                <p className="text-gray-500">
-                  Illum doloremque ea, blanditiis sed dolor laborum praesentium maxime sint,
-                  consectetur atque ipsum ab adipisci ullam aspernatur odio soluta, quisquam dolore
-                </p>
+                <div className="font-bold text-2xl mb-1">Pursue endless growth</div>
+                <div className="text-gray-400 text-lg">
+                  <div>We are constantly growing in our own way, in our own field.</div>
+                  <div>The team's goal is the same as the individual's goal, and the individual's growth is the team's growth.</div>
+                </div>
               </div>
             </div>
           </div>
         </div>
-      </section>
-    
+      </div>
     </div>
+    </>
   )
 }
 
