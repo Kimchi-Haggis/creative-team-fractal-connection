@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
-import Link from 'next/link'
 import Image from 'next/image'
+
+import { Link, animateScroll as scroll, } from 'react-scroll'
 
 import FractalConnectionLogo from '@public/fractal-connection-logo.svg'
 
@@ -17,9 +18,9 @@ const Navbar = (props: Props) => {
     <nav className="bg-white px-2 sm:px-4 py-2.5 fixed w-full z-20 top-0 left-0 mx-auto">
       <div className="container grid grid-cols-4 items-center mx-auto">
         <div className='grid items-center col-span-3 md:col-span-2 xl:col-span-3 '>
-          <Link href="/#" className='w-fit'>
+          <a href='' className='w-fit'>
             <Image src={FractalConnectionLogo} className="h-8 w-fit ml-4 lg:ml-20" alt="Logo" />
-          </Link>
+          </a>
         </div>
       <div className="w-fit grid md:order-2 col-span-1 mx-auto">
         <button onClick={handleNav} data-collapse-toggle="navbar-sticky" type="button" className="mx-auto inline-flex items-center p-2 text-sm text-black rounded-lg md:hidden  focus:outline-none focus:ring-2 focus:ring-gray-200" aria-controls="navbar-sticky" aria-expanded="false">
@@ -36,16 +37,16 @@ const Navbar = (props: Props) => {
       <div className={nav? "items-center justify-between w-full md:flex md:w-auto md:order-1 col-span-4": "hidden md:flex"} id="navbar-sticky">
         <ul className="text-xl flex flex-col p-4 mt-4 md:flex-row md:space-x-8 md:mt-0 mx-auto text-black">
           <li>
-            <a href="#" className="block py-2 pl-3 pr-4 bg-white  md:bg-transparent md:p-0" aria-current="page">Home</a>
+            <Link to="Hero" smooth={true} duration={500} className="block py-2 pl-3 pr-4 bg-white  md:bg-transparent md:p-0" aria-current="page">Home</Link>
           </li>
           <li>
-            <a href="#" className="block py-2 pl-3 pr-4 rounded hover:bg-gray-100 md:hover:bg-transparent md:p-0">About</a>
+            <Link to="About" smooth={true} duration={500} className="block py-2 pl-3 pr-4 rounded hover:bg-gray-100 md:hover:bg-transparent md:p-0">About</Link>
           </li>
           <li>
-            <a href="#" className="block py-2 pl-3 pr-4 rounded hover:bg-gray-100 md:hover:bg-transparent md:p-0">Members</a>
+            <Link to="Members" smooth={true} duration={500} className="block py-2 pl-3 pr-4 rounded hover:bg-gray-100 md:hover:bg-transparent md:p-0">Members</Link>
           </li>
           <li>
-            <a href="#" className="block py-2 pl-3 pr-4 rounded hover:bg-gray-100 md:hover:bg-transparent md:p-0">Contact</a>
+            <Link to="Contact" smooth={true} duration={500} className="block py-2 pl-3 pr-4 rounded hover:bg-gray-100 md:hover:bg-transparent md:p-0">Contact</Link>
           </li>
         </ul>
       </div>
