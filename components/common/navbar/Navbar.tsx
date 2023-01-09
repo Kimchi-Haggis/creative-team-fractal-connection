@@ -35,7 +35,7 @@ const Navbar = (props: Props) => {
         </button>
       </div>
       <div className={nav? "items-center justify-between w-full md:flex md:w-auto md:order-1 col-span-4": "hidden md:flex"} id="navbar-sticky">
-        <ul className="text-xl flex flex-col p-4 mt-4 md:flex-row md:space-x-8 md:mt-0 mx-auto text-black">
+        <ul className="text-xl flex flex-col p-4 mt-4 md:flex-row md:space-x-8 md:mt-0 mx-auto text-black cursor-pointer">
           <li>
             <Link to="Hero" smooth={true} duration={500} className="block py-2 pl-3 pr-4 bg-white  md:bg-transparent md:p-0" aria-current="page">Home</Link>
           </li>
