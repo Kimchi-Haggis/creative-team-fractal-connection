@@ -5,10 +5,9 @@ type Props = {}
 
 const Member = (props: Props) => {
   return (
-    <div className="py-24 px-6 mx-auto bg-fixed bg-cover bg-[url('https://img.freepik.com/free-vector/vector-3d-abstract-background-with-paper-cut-shape_1217-2903.jpg?w=1800&t=st=1673032057~exp=1673032657~hmac=dbbfe8dda7287589725d7b2bed269b9c7458aeaa4675109293a2ab321c2dd133')]">
-      <section className="mb-32 text-gray-800 text-center">
-        <h2 className="text-3xl font-bold mb-12">Meet the <u className="text-blue-600">team</u></h2>
-        <div className="grid grid-cols-2 md:grid-cols-3 xl:grid-cols-4 gap-x-6 lg:gap-xl-12">
+    <div className="py-12 px-6 mx-auto bg-[#000000f3] text-white text-center">
+      <h2 className="text-4xl font-bold my-12">Meet the Team</h2>
+        <div className="grid grid-cols-2 md:grid-cols-3 xl:grid-cols-4 gap-x-6 lg:gap-xl-12 text-xl">
           <div className="mb-12">
             <img src="https://mdbootstrap.com/img/new/avatars/2.jpg" className="rounded-full mx-auto shadow-lg mb-4 max-w-[100px]" alt="" />
             <p className="font-bold mb-2">John Doe</p>
@@ -70,7 +69,6 @@ const Member = (props: Props) => {
             <p className="text-gray-500">Web designer</p>
           </div>
         </div>
-      </section>
     </div>
   )
 }
